@@ -3,6 +3,9 @@
  *
  *  Created on: Nov 4, 2019
  *      Author: casey
+ *
+ *      contains the fuctions declarations for the
+ *      binary heap
  */
 
 
@@ -18,13 +21,14 @@ class BinHeap {
 	int heaplen;
 	int arrlen;
 	string *heap;
+
 	BinHeap(string arr[], int len);
 	void printHeap();
 	int findMax(int x, int y);
 	void bubbleDown(int i);
 	void bubbleUp(int i);
 	void insertHeap(string s);
-
+	~BinHeap();
 	string deleteHeap();
 	string deleteHeap2();
 	void deleteAll();
